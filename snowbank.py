@@ -21,7 +21,7 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
 
-rows = run_query("SELECT * from SNOWBANK_ACCOUNTS.analytics.accounts;")
+rows = run_query("SELECT * from accounts;")
 
 # Print results.
 for row in rows:
