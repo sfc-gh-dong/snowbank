@@ -21,7 +21,7 @@ def run_query(query):
         cur.execute(query)
         return cur.fetchall()
 
-rows = run_query("SELECT * from accounts;")
+rows = run_query("SELECT * from accounts limit 10;")
 
 # Print results.
 for row in rows:
